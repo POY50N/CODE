@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+}
+
+.container-right{
+    width: 40vw;
+    height: 100vh;
+    background: rgb(93,93,125,.16);
+    position: absolute;
+    right: 0;
+}
+
+img{
+    position: absolute;
+    right: 20vw;
+    top: 25vh;
+    width: 28vw;
+    min-width: 320px;
+}
+/* 1200px reduzir espaçamento */
+nav{
+    width: 390px;
+    height: 42px;
+    margin: 24px 0px;
+    place-self: center;
+}
+/* 1050px virar botao menu */
+a{
+    color: #5D5D7D;
+    font-size: 28px;
+    letter-spacing: 0px;
+    padding-left: 41px;
+}
+
+a:nth-child(2){
+    opacity: .4;
+}
+
+a:nth-child(1){
+    padding: 0;
+}
+
+.container-left{
+    width: 60vw;
+    padding: calc(100vw/3.7) 17vw 0 9.44vw ;
+    max-height: 100svh;
+
+}
+h1{
+    font-size: 70px;
+    line-height: 80px;
+    letter-spacing: 0;
+    color: #5D5D7D;
+    max-width: 368px;
+    max-height: auto;
+    padding-bottom: 1.13vh;
+}
+
+p{
+    font-size: 28px;
+    line-height: 48px;
+    letter-spacing: 0;
+    color:#5D5D7D;
+    opacity: .6;
+    max-width: 540px;
+    max-height: auto;
+    padding-bottom: 1.13vh;
+}
+
+button{
+    font-size: 24px;
+    color: white;
+    border: 0;
+    background: #9499EA;
+    border-radius: 40px;
+    width: 269px ;
+    height: 62px;
+}
+
+button:hover{
+    background: #9498ead0;
+}
+
+@media (max-width: 600px) {
+    .container-left{
+        height: 50svh;
+        width: 100svw;
+        padding: 0;
+    }
+    h1{
+        font-size: 36px;
+        line-height: 52px;
+        width: calc(100svw - 22svw);
+        max-width: 290px;
+        height: 104px;
+        text-align: center;
+        margin-top:7.14vh;
+    }
+    p{
+        font-size: larger;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0;
+        width: calc(100svw - 22svw);
+        max-width: 300px;
+        padding-top:2vh;
+    }
+
+    button{
+        position: absolute;
+        margin-top: 1.7vh;
+        width: 270px;
+        min-height: 62px;
+        left: calc(50vw - 135px)
+    }
+
+    .m-center{
+        place-self: center;
+    }
+
+    .container-right{
+        height: 50vh;
+        width: 100svw;
+        bottom: 0;
+    }
+
+    nav{
+        opacity: 0;
+    }
+
+    img{
+        position:absolute;
+        width: auto;
+        max-height: 50vh;
+        padding: 4svh;
+        top: 0vh;
+        left: 0;
+        padding-left: calc(50svw - 131px);
+    }
+}
