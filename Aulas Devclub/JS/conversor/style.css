@@ -9,6 +9,11 @@
     color: #555555;
 }
 
+img{
+    display: block;
+    margin: 0px auto;
+}
+
 body{
     background-color: #8A51FC;
 }
@@ -26,9 +31,6 @@ body{
 
 #logoGif{
     width: 300px;
-}
-#seta{
-    margin: 0px auto;
 }
 
 button{
